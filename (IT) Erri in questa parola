@@ -1,0 +1,15 @@
+orazione = input("Scribi una parola o una frase: ")
+
+def Erri_in_questa_parola(orazione):
+    rR = ["r","R"]
+    r_countadore = 0
+    resultado = []
+    for parola in orazione.split():
+        for car in parola:
+            if car in rR:
+                r_countadore += 1
+        resultado.append(f"La parola {parola} ha {r_countadore} erre/i.")
+        r_countadore -= r_countadore
+    return resultado
+
+print(Erri_in_questa_parola(orazione))
