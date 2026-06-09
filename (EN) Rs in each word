@@ -8,7 +8,7 @@ def Rs_in_each_word(sentence):
         for char in word:
             if char in rR:
                 r_counter += 1
-        result.append(f"The word {word} has {r_counter}")
+        result.append(f"The word {word} has {r_counter} r/s.")
         r_counter -= r_counter
     return result
 
