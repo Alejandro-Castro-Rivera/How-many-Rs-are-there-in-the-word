@@ -1,0 +1,15 @@
+oracion = input("Pon una palabra o frase: ")
+
+def Rs_en_cada_palabra(oracion):
+    rR = ["r","R"]
+    r_countador = 0
+    resultado = []
+    for palabra in oracion.split():
+        for car in palabra:
+            if car in rR:
+                r_countador += 1
+        resultado.append(f"The word {palabra} has {r_countador}")
+        r_countador -= r_countador
+    return resultado
+
+print(Rs_en_cada_palabra(oracion))
