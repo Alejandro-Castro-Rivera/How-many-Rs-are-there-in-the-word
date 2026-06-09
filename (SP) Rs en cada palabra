@@ -8,7 +8,7 @@ def Rs_en_cada_palabra(oracion):
         for car in palabra:
             if car in rR:
                 r_countador += 1
-        resultado.append(f"La palabra {palabra} tiene {r_countador} rs.")
+        resultado.append(f"La palabra {palabra} tiene {r_countador} r/s.")
         r_countador -= r_countador
     return resultado
 
