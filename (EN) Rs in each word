@@ -1,0 +1,15 @@
+sentence = input("Enter a word or phrase: ")
+
+def Rs_in_each_word(sentence):
+    rR = ["r","R"]
+    r_counter = 0
+    result = []
+    for word in sentence.split():
+        for char in word:
+            if char in rR:
+                r_counter += 1
+        result.append(f"The word {word} has {r_counter}")
+        r_counter -= r_counter
+    return result
+
+print(Rs_in_each_word(sentence))
